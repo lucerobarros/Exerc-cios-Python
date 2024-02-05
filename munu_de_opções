@@ -1,0 +1,29 @@
+valor1 = int(input('Primeiro valor: '))
+valor2 = int(input('Segundo valor: '))
+opção = 0
+soma = valor1 + valor2
+produto = valor1 * valor2
+while opção != 5:
+    print('''    
+    [1] SOMAR
+    [2] MULTIPLICAR
+    [3] MAIOR
+    [4] NOVOS NÚMEROS
+    [5] SAIR DO PROGRAMA''') 
+    opção = int(input('Digite sua opção: '))
+    if opção == 1:
+        print('A soma dos valores {} e {} é: {}'.format(valor1, valor2, soma))
+    elif opção == 2:
+        print('A multiplicação entre {} e {} é: {}'.format(valor1, valor2, produto))
+    elif opção == 3:
+        if valor1 > valor2:
+            print('O maior valor é: {}'.format(valor1))
+        elif valor1 < valor2:
+            print('O maior valor é: {}'.format(valor2))
+        elif valor1 == valor2:
+            print('Os valores são iguais.')
+    elif opção == 4:
+        print('Digite novos valores:')
+        valor1 = int(input('Primeiro valor: '))
+        valor2 = int(input('Segundo valor: '))
+print('Fim do programa.')
